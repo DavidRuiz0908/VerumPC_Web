@@ -18,5 +18,7 @@
         <a href='perfil.php'>
             <button type="button"> Entrar </button>
         </a>
-    </form>
+        <a href='registro.php'>
+            <button type="button"> Crear Cuenta </button>
+        </a>
 </main>
