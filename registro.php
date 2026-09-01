@@ -17,7 +17,7 @@
         <input type="text">
         <br>
         <a href="login.php">
-            <button type="button"> Registrar </button>
+            <button type="button" onclick="alert ('Registro Exitoso')"> Registrar </button>
         </a>
     </form>
 </main>
