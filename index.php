@@ -3,14 +3,22 @@
 ?>
 
 <main>
-    <h1>Maximiza el rendimiento de tu PC</h1>
-    <p>En Verum somos especialistas en ensambles a la medida y mantenimiento profundo.
-        Desde una limpieza detallada y cambio de pasta térmica, hasta una gestión de cables
-        impecable para que tu equipo luzca y funcione como nuevo.
-    </p>
-    <a href= "catalogo.php" > Ver Productos </a>
+    <h1>Iniciar Sesión Verum</h1>
+    <form>
+        <label>
+            Correo Electronico
+        </label>
+        <input type="email" name="correo" id="correo">
+        <br>
+        <label>
+            Contraseña
+        </label>
+        <input type="password" name="password" id="password"> 
+        <br>
+        <a href='home.php'>
+            <button type="button"> Entrar </button>
+        </a>
+        <a href='registro.php'>
+            <button type="button"> Crear Cuenta </button>
+        </a>
 </main>
-
-<?php
-    include 'footer.php';
-?>

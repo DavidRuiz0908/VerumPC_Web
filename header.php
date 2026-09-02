@@ -15,7 +15,6 @@
             <a href="index.php" > Inicio </a>
             <a href="catalogo.php" > Catalogo </a>
             <a href="nosotros.php" > Nosotros </a>
-            <a href="login.php" > Iniciar Sesion </a>
             <a href="perfil.php" > Perfil </a>
         </nav>
     </header>

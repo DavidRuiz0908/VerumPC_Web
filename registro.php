@@ -16,7 +16,7 @@
         <label for="">Telefono</label>
         <input type="text">
         <br>
-        <a href="login.php">
+        <a href="index.php">
             <button type="button" onclick="alert ('Registro Exitoso')"> Registrar </button>
         </a>
     </form>
