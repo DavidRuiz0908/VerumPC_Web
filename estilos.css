@@ -1,0 +1,100 @@
+header {
+    background-color: #0a0c10;
+    padding: 20px;
+    border-bottom: 1px solid #1f2937;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+    
+header nav a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3sn ease;
+}
+
+header nav a:hover {
+    color: #00d2ff;
+}
+
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: sans-serif;
+}
+
+.hero-verum{
+    text-align: center;
+    padding: 40px 20px 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-verum h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-verum p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #8892b0; /* Gris claro para que la lectura no canse */
+}
+
+/* Clase comodín para centrar elementos sueltos */
+.centrar-contenido {
+    text-align: center;
+}
+.tarjeta-fondo-verum {
+    background-color: #11141a; /* Fondo */
+    border: 1px solid #1f2937; /* Borde */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.15); /* Resplandor azul */
+    padding: 40px;
+    max-width: 700px;
+    margin: 40px auto; /* auto para centrar horizontalmente */
+}
+
+.boton-verum {
+    background-color: #00d2ff;
+    color: #121212;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para tu footer.php */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #1f2937;
+    color: #8892b0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #00d2ff;
+    text-decoration: none;
+}
+
+/* Color gris suave para las descripciones, evita cansar la vista */
+.texto-descripcion {
+    color: #8892b0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Color cyan y letras en negrita para resaltar los costos */
+.precio-azul {
+    color: #00d2ff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
