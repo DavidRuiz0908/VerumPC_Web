@@ -12,6 +12,9 @@
 </head>
 <body>
     <header>
+        <div class="logo-verum">
+            <a href="home.php">VERUM</a>
+        </div>
         <nav>
             <a href="home.php" > Inicio </a>
             <a href="catalogo.php" > Catalogo </a>

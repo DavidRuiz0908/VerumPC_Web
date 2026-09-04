@@ -1,7 +1,27 @@
+.logo-verum a {
+    /* Usa fuentes ya instaladas en Windows/Mac sin necesidad de internet */
+    font-family: 'Arial Black', 'Impact', 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 4px; /* Separa los caracteres para darle look moderno */
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.8), 0 0 20px rgba(0, 210, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.logo-verum a:hover {
+    color: #00d2ff;
+    text-shadow: 0 0 25px rgba(0, 210, 255, 1);
+}
 header {
     background-color: #0a0c10;
-    padding: 20px;
+    padding: 15px 40px;
     border-bottom: 1px solid #1f2937;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 header nav {
@@ -15,7 +35,7 @@ header nav a {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
-    transition: color 0.3sn ease;
+    transition: color 0.3s ease;
 }
 
 header nav a:hover {
@@ -97,4 +117,82 @@ footer a {
     color: #00d2ff;
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+/* Agrupa cada input con su etiqueta */
+.agrupar-formularios {
+    margin-bottom: 20px;
+    text-align: left; /* Mejor lectura si las etiquetas están a la izquierda */
+}
+
+.agrupar-formularios label {
+    display: block; /* Coloca el texto arriba de la caja */
+    color: #8892b0;
+    margin-bottom: 8px;
+    font-size:large;
+}
+
+/* Diseño Cyberpunk para las cajas de texto */
+.input-verum {
+    width: 90%; /* Evita que choque con los bordes de la tarjeta */
+    padding: 12px;
+    background-color: #1a1e24; /* Un gris un poco más claro que el fondo */
+    border: 1px solid #1f2937;
+    border-radius: 5px;
+    color: #E0E0E0;
+    font-family: sans-serif;
+}
+
+/* Efecto al darle clic a la caja para escribir */
+.input-verum:focus {
+    outline: none;
+    border-color: #00d2ff;
+    box-shadow: 0 0 8px rgba(0, 210, 255, 0.3);
+}
+
+/* Corrige el fondo blanco del autocompletado del navegador */
+.input-verum:-webkit-autofill,
+.input-verum:-webkit-autofill:hover, 
+.input-verum:-webkit-autofill:focus, 
+.input-verum:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #1a1e24 inset !important;
+    -webkit-text-fill-color: #E0E0E0 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* El fondo oscuro semitransparente que cubre toda la pantalla */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo muy oscuro */
+    z-index: 1000; /* Asegura que flote por encima de todo el menú y la página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La ventanita flotante usando la identidad Cyberpunk de Verum */
+.modal-contenido {
+    background-color: #11141a;
+    border: 1px solid #00d2ff;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.3);
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    position: relative;
+}
+
+/* Botón discreto para cerrar la ventana */
+.btn-cerrar {
+    background: transparent;
+    color: #8892b0;
+    border: none;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: underline;
 }

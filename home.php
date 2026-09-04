@@ -3,6 +3,23 @@
 ?>
 
 <main>
+        <!-- Ventana Flotante (Modal) de Promoción -->
+    <div class="modal-overlay" id="modal-promocion">
+        <div class="modal-contenido">
+            <h2 style="color: #00d2ff; margin-bottom: 10px;">¡Mejora tu Setup!</h2>
+            <p class="texto-descripcion" style="margin-bottom: 20px;">Regístrate hoy en Verum y obtén <strong>10% de descuento</strong> en tu primer mantenimiento profundo.</p>
+            
+            <a href="registro.php">
+                <button type="button" class="boton-verum" style="width: 100%;">Registrarme Ahora</button>
+            </a>
+            
+            <!-- Este pequeño código onclick oculta la ventana cuando le das clic -->
+            <button type="button" class="btn-cerrar" onclick="document.getElementById('modal-promocion').style.display='none'">
+                No gracias, ver el sitio
+            </button>
+        </div>
+    </div>
+    
     <div class="hero-verum">
         <h1>Maximiza el rendimiento de tu PC</h1>
         <p>En Verum somos especialistas en ensambles a la medida y mantenimiento profundo.
