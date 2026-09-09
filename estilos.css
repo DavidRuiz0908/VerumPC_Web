@@ -80,6 +80,32 @@ body {
     margin: 40px auto; /* auto para centrar horizontalmente */
 }
 
+.tarjeta-servicio {
+    background-color: #11141a; /* Fondo */
+    border: 1px solid #1f2937; /* Borde */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.15); /* Resplandor azul */
+    padding: 20px;
+    margin: 15px; 
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.categoria-catalogo {
+    margin-bottom: 60px; /* Separación grande entre secciones */
+    max-width: 800px;    /* Evita que se estire por toda la pantalla */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tarjeta-servicio h3 {
+    margin: 0 0 5px 0;
+}
+.tarjeta-servicio p {
+    margin: 0;
+}
+
 .boton-verum {
     background-color: #00d2ff;
     color: #121212;
