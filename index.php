@@ -19,8 +19,8 @@
             </div>
 
             <br><br>
-            <a href='home.php'>
-                <button type="button" class="boton-verum"> Registrarme </button>
+            <a href='home.php?login=1'>
+                <button type="button" class="boton-verum">Entrar</button>
             </a>
             <a href='registro.php'>
                 <button type="button" class="boton-verum" style="background-color: #1f2937; color: white;"> Crear Cuenta </button>

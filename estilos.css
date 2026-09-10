@@ -48,6 +48,27 @@ body {
     font-family: sans-serif;
 }
 
+/* Estructura Macro para el Home (Mitad y Mitad) */
+.layout-home {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center; /* Centra ambos bloques verticalmente */
+    gap: 60px; /* Crea un pasillo amplio entre la tarjeta y los textos */
+    max-width: 1100px;
+    margin: 40px auto; /* Centra todo el bloque en pantallas muy grandes */
+    padding: 0 20px;
+}
+
+.home-izquierda {
+    flex: 1; /* Obliga a la tarjeta a ocupar exactamente la mitad */
+    max-width: 450px; /* Evita que la tarjeta se haga excesivamente ancha */
+}
+
+.home-derecha {
+    flex: 1; /* Obliga a los textos a ocupar la otra mitad */
+}
+
 .hero-verum{
     text-align: center;
     padding: 40px 20px 10px;
@@ -74,7 +95,7 @@ body {
     background-color: #11141a; /* Fondo */
     border: 1px solid #1f2937; /* Borde */
     border-radius: 15px; /* Esquinas redondeadas */
-    box-shadow: 0 0 20px rgba(0, 210, 255, 0.15); /* Resplandor azul */
+    box-shadow: 0 0 20px rgba(0, 85, 255, 0.325); /* Resplandor azul */
     padding: 40px;
     max-width: 700px;
     margin: 40px auto; /* auto para centrar horizontalmente */
@@ -84,7 +105,7 @@ body {
     background-color: #11141a; /* Fondo */
     border: 1px solid #1f2937; /* Borde */
     border-radius: 15px; /* Esquinas redondeadas */
-    box-shadow: 0 0 20px rgba(0, 210, 255, 0.15); /* Resplandor azul */
+    box-shadow: 0 0 20px rgba(0, 85, 255, 0.15); /* Resplandor azul */
     padding: 20px;
     margin: 15px; 
     display: flex;
@@ -221,4 +242,16 @@ footer a {
     margin-top: 20px;
     cursor: pointer;
     text-decoration: underline;
+}
+
+.boton-pequeño {
+    padding: 6px 15px;
+    font-size: 0.85rem;
+}
+
+.acciones-servicio {
+    display: flex;
+    flex-direction: column; /* Apila los elementos de arriba hacia abajo */
+    align-items: flex-end;  /* Empuja el contenido a la orilla derecha */
+    gap: 10px;              /* Separación exacta entre el precio y el botón */
 }
