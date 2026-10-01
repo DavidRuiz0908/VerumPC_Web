@@ -111,6 +111,8 @@ body {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .categoria-catalogo {
@@ -254,4 +256,25 @@ footer a {
     flex-direction: column; /* Apila los elementos de arriba hacia abajo */
     align-items: flex-end;  /* Empuja el contenido a la orilla derecha */
     gap: 10px;              /* Separación exacta entre el precio y el botón */
+}
+
+/* Diseño de las etiquetas de Oferta y Nuevo */
+.etiqueta-oferta, .etiqueta-nuevo {
+    position: absolute;
+    top: 10px;
+    left: -25px;
+    transform: rotate(-45deg);
+    padding: 2px 25px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    color: #121212;
+}
+
+.etiqueta-oferta {
+    background-color: #00d2ff; /* Cyan para Ofertas */
+}
+
+.etiqueta-nuevo {
+    background-color: #25D366; /* Verde para Nuevos */
 }

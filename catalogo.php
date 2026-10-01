@@ -7,6 +7,22 @@
         <p>Soluciones a la medida con transparencia total en costos de hardware y mano de obra.</p>
         <br>
     </div>
+    <!-- NUEVO: Barra de búsqueda y filtros -->
+    <div class="centrar-contenido" style="margin-bottom: 40px;">
+        <form action="" method="GET" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 800px; margin: 0 auto;">
+            <input type="text" name="buscar" class="input-verum" placeholder="Buscar servicio (ej. Mantenimiento, Gamer...)" style="flex: 2; min-width: 200px;">
+            
+            <select name="categoria" class="input-verum" style="flex: 1; min-width: 150px;">
+                <option value="todas">Todas las categorías</option>
+                <option value="ensambles">Ensambles</option>
+                <option value="mantenimiento">Mantenimiento</option>
+                <option value="asesoria">Asesoría</option>
+            </select>
+            
+            <button type="submit" class="boton-verum">Buscar</button>
+        </form>
+    </div>
+
     <div class="categoria-catalogo">
         <h2 class="centrar-contenido" style="color:#00d2ff">ENSAMBLES A MEDIDA</h2>
 
@@ -37,6 +53,9 @@
         </div>
 
         <div class="tarjeta-servicio">
+
+            <!-- NUEVO PRODUCTO ETIQUETA -->
+            <div class="etiqueta-nuevo">NUEVO</div> 
             <div>
                 <h3>Gama Alta / Workstation & AIO</h3>
                 <p class="texto-descripcion">Refrigeracion Liquida + RGB complejo + Test de estres prolongado</p>
@@ -67,6 +86,8 @@
         </div>
 
         <div class="tarjeta-servicio">
+            <!-- OFERTA DE PRODUCTO ETIQUETA -->
+            <div class="etiqueta-oferta">OFERTA</div>
             <div>
                 <h3>Upgrade de Veocidad (SSD + RAM)</h3>
                 <p class="texto-descripcion">Instalacion de componentes en PCs o laptos lentas + Optimizacion</p>

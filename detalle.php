@@ -101,14 +101,27 @@
 
         <br><br>
         <div class="centrar-contenido">
+
+            <?php if ($id_servicio != 'error'): ?>
+            
+            <form method="POST" action="carrito.php" style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 20px;">
+                
+                <!-- ID oculto que el usuario no ve, pero el sistema sí -->
+                <input type="hidden" name="id_servicio" value="<?php echo $id_servicio; ?>">
+                
+                <!-- Selector de cantidad -->
+                <label for="cantidad" class="texto-descripcion">Número de Equipos:</label>
+                <input type="number" name="cantidad" id="cantidad" value="1" min="1" class="input-verum" style="width: 80px;">
+                
+                <!-- Botón para enviar -->
+                <button type="submit" class="boton-verum">Agregar a mi Orden</button>
+            </form>
+
+            <?php endif; ?>
+
             <a href="catalogo.php">
                 <button type="button" class="boton-verum" style="background-color: #1f2937; color: white;">← Volver al Catálogo</button>
             </a>
-            <?php if ($id_servicio != 'error'): ?>
-            <a href="agendar.php">
-                <button type="button" class="boton-verum">Agendar Servicio</button>
-            </a>
-            <?php endif; ?>
         </div>
 
     </div>

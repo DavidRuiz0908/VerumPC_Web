@@ -37,6 +37,7 @@
             <a href="catalogo.php" > Catalogo </a>
             <a href="nosotros.php" > Nosotros </a>
             <a href="contacto.php">Contactanos</a>
+            <a href="carrito.php" style="color: #25D366; font-weight: bold;">Mis Ordenes</a>
             <!-- Condicional de PHP: Si la sesión existe, muestra Perfil. Si no, Iniciar Sesión -->
             <?php if(isset($_SESSION['sesion_activa'])): ?>
             <a href="perfil.php" style="color: #00d2ff;">Mi Perfil</a>
