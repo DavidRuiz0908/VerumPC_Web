@@ -33,14 +33,14 @@
             <a href="home.php">VERUM</a>
         </div>
         <nav>
-            <a href="home.php" > Inicio </a>
-            <a href="catalogo.php" > Catalogo </a>
-            <a href="nosotros.php" > Nosotros </a>
-            <a href="contacto.php">Contactanos</a>
-            <a href="carrito.php" style="color: #25D366; font-weight: bold;">Mis Ordenes</a>
+            <a href="catalogo.php" style="color: #00d2ff; font-weight: bold;"> Catalogo </a>
+            <a href="nosotros.php" style="color: #00d2ff; font-weight: bold;"> Nosotros </a>
+            <a href="contacto.php" style="color: #00d2ff; font-weight: bold;"> Contactanos </a>
+            <a href="carrito.php" style="color: #00d2ff; font-weight: bold;">Mis Ordenes</a>
+            <a href="admin.php" style="color: #acb7d2; font-weight: bold;">Admin</a>
             <!-- Condicional de PHP: Si la sesión existe, muestra Perfil. Si no, Iniciar Sesión -->
             <?php if(isset($_SESSION['sesion_activa'])): ?>
-            <a href="perfil.php" style="color: #00d2ff;">Mi Perfil</a>
+            <a href="perfil.php" style="color: #acb7d2;">Mi Perfil</a>
             <a href="header.php?logout=1" style="color: #ff4c4c;">Cerrar Sesión</a>
             <?php else: ?>
             <a href="index.php">Iniciar Sesión</a>

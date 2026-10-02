@@ -1,3 +1,43 @@
+/* =========================================
+   ÍNDICE DE ESTILOS - VERUM
+   1. Configuración Global
+   2. Tipografía y Textos
+   3. Estructura Principal (Header, Footer)
+   4. Layouts y Contenedores (Home, Hero)
+   5. Tarjetas y Catálogo
+   6. Componentes UI (Botones, Formularios)
+   7. Modales y Ventanas Flotantes
+========================================= */
+
+/* =========================================
+   1. CONFIGURACIÓN GLOBAL
+========================================= */
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: sans-serif;
+}
+
+/* =========================================
+   2. TIPOGRAFÍA Y TEXTOS
+========================================= */
+/* Color gris suave para las descripciones, evita cansar la vista */
+.texto-descripcion {
+    color: #8892b0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Color cyan y letras en negrita para resaltar los costos */
+.precio-azul {
+    color: #00d2ff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   3. ESTRUCTURA PRINCIPAL (HEADER, FOOTER)
+========================================= */
 .logo-verum a {
     /* Usa fuentes ya instaladas en Windows/Mac sin necesidad de internet */
     font-family: 'Arial Black', 'Impact', 'Trebuchet MS', sans-serif;
@@ -15,6 +55,7 @@
     color: #00d2ff;
     text-shadow: 0 0 25px rgba(0, 210, 255, 1);
 }
+
 header {
     background-color: #0a0c10;
     padding: 15px 40px;
@@ -42,12 +83,24 @@ header nav a:hover {
     color: #00d2ff;
 }
 
-body {
-    background-color: #121212;
-    color: #E0E0E0;
-    font-family: sans-serif;
+/* Estilo para tu footer.php */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #1f2937;
+    color: #8892b0;
+    font-size: 0.9rem;
 }
 
+footer a {
+    color: #00d2ff;
+    text-decoration: none;
+}
+
+/* =========================================
+   4. LAYOUTS Y CONTENEDORES
+========================================= */
 /* Estructura Macro para el Home (Mitad y Mitad) */
 .layout-home {
     display: flex;
@@ -69,7 +122,7 @@ body {
     flex: 1; /* Obliga a los textos a ocupar la otra mitad */
 }
 
-.hero-verum{
+.hero-verum {
     text-align: center;
     padding: 40px 20px 10px;
     max-width: 800px;
@@ -91,6 +144,10 @@ body {
 .centrar-contenido {
     text-align: center;
 }
+
+/* =========================================
+   5. TARJETAS Y CATÁLOGO
+========================================= */
 .tarjeta-fondo-verum {
     background-color: #11141a; /* Fondo */
     border: 1px solid #1f2937; /* Borde */
@@ -99,6 +156,13 @@ body {
     padding: 40px;
     max-width: 700px;
     margin: 40px auto; /* auto para centrar horizontalmente */
+}
+
+.categoria-catalogo {
+    margin-bottom: 60px; /* Separación grande entre secciones */
+    max-width: 800px;    /* Evita que se estire por toda la pantalla */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tarjeta-servicio {
@@ -115,20 +179,45 @@ body {
     overflow: hidden;
 }
 
-.categoria-catalogo {
-    margin-bottom: 60px; /* Separación grande entre secciones */
-    max-width: 800px;    /* Evita que se estire por toda la pantalla */
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .tarjeta-servicio h3 {
     margin: 0 0 5px 0;
 }
+
 .tarjeta-servicio p {
     margin: 0;
 }
 
+.acciones-servicio {
+    display: flex;
+    flex-direction: column; /* Apila los elementos de arriba hacia abajo */
+    align-items: flex-end;  /* Empuja el contenido a la orilla derecha */
+    gap: 10px;              /* Separación exacta entre el precio y el botón */
+}
+
+/* Diseño de las etiquetas de Oferta y Nuevo */
+.etiqueta-oferta, .etiqueta-nuevo {
+    position: absolute;
+    top: 10px;
+    left: -25px;
+    transform: rotate(-45deg);
+    padding: 2px 25px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    color: #121212;
+}
+
+.etiqueta-oferta {
+    background-color: #00d2ff; /* Cyan para Ofertas */
+}
+
+.etiqueta-nuevo {
+    background-color: #25D366; /* Verde para Nuevos */
+}
+
+/* =========================================
+   6. COMPONENTES UI (BOTONES, FORMULARIOS)
+========================================= */
 .boton-verum {
     background-color: #00d2ff;
     color: #121212;
@@ -139,33 +228,9 @@ body {
     cursor: pointer;
 }
 
-/* Estilo para tu footer.php */
-footer {
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 50px;
-    border-top: 1px solid #1f2937;
-    color: #8892b0;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: #00d2ff;
-    text-decoration: none;
-}
-
-/* Color gris suave para las descripciones, evita cansar la vista */
-.texto-descripcion {
-    color: #8892b0;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-/* Color cyan y letras en negrita para resaltar los costos */
-.precio-azul {
-    color: #00d2ff;
-    font-weight: bold;
-    font-size: 1.1rem;
+.boton-pequeño { /* Le cambié la 'ñ' por estética, asegúrate que en HTML siga diciendo boton-pequeño */
+    padding: 6px 15px;
+    font-size: 0.85rem;
 }
 
 /* Agrupa cada input con su etiqueta */
@@ -209,6 +274,9 @@ footer a {
     transition: background-color 5000s ease-in-out 0s;
 }
 
+/* =========================================
+   7. MODALES Y VENTANAS FLOTANTES
+========================================= */
 /* El fondo oscuro semitransparente que cubre toda la pantalla */
 .modal-overlay {
     position: fixed;
@@ -246,35 +314,81 @@ footer a {
     text-decoration: underline;
 }
 
-.boton-pequeño {
-    padding: 6px 15px;
-    font-size: 0.85rem;
-}
+/* =========================================
+   8. PANEL DE ADMINISTRADOR
+========================================= */
 
-.acciones-servicio {
+/* Dividir pantalla en 2 */
+.contenedor-admin {
     display: flex;
-    flex-direction: column; /* Apila los elementos de arriba hacia abajo */
-    align-items: flex-end;  /* Empuja el contenido a la orilla derecha */
-    gap: 10px;              /* Separación exacta entre el precio y el botón */
+    min-height: calc(100vh - 75px);
 }
 
-/* Diseño de las etiquetas de Oferta y Nuevo */
-.etiqueta-oferta, .etiqueta-nuevo {
-    position: absolute;
-    top: 10px;
-    left: -25px;
-    transform: rotate(-45deg);
-    padding: 2px 25px;
-    font-size: 0.75rem;
+.menu-lateral{
+    width: 250px;
+    border-right: 2px solid #1f2937;
+    background-color: #11141a;
+    padding: 30px 20px;
+}
+
+.titulo-menu{
+    color: #00d2ff;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1f2937;
+    padding-bottom: 10px;
+}
+
+.lista-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-menu{
+    margin-bottom: 15px;
+}
+
+.link-menu {
+    color: #8892b0; 
+    text-decoration: none;
+}
+
+/* Diseño del enlace cuando estás en esa página (activo) */
+.link-menu.activo {
+    color: white; 
     font-weight: bold;
+}
+
+/* El área de trabajo a la derecha */
+.area-trabajo {
+    flex: 1; 
+    padding: 40px;
+}
+
+/* --- Tarjetas de Resumen (Dashboard) --- */
+.grid-resumen {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que bajen si la pantalla es pequeña */
+}
+
+.tarjeta-resumen {
+    background-color: #11141a;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1; /* Obliga a todas a medir lo mismo a lo ancho */
+    min-width: 200px;
     text-align: center;
-    color: #121212;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Sombra oscura para dar profundidad */
 }
 
-.etiqueta-oferta {
-    background-color: #00d2ff; /* Cyan para Ofertas */
+.numero-resumen {
+    font-size: 3.5rem;
+    margin: 0 0 10px 0;
 }
 
-.etiqueta-nuevo {
-    background-color: #25D366; /* Verde para Nuevos */
-}
+/* Colores de identidad visual para los números */
+.numero-resumen.cyan { color: #00d2ff; }
+.numero-resumen.verde { color: #25D366; }
+.numero-resumen.rojo { color: #ff4c4c; }
