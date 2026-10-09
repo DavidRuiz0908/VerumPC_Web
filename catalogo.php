@@ -129,6 +129,18 @@
                 </a>
             </div>
         </div>
+        <div class="tarjeta-servicio">
+            <div>
+                <h3>Formateo e Instalación de SO</h3>
+                <p class="texto-descripcion">Instalación limpia del sistema operativo, configuración de drivers actualizados.</p>
+            </div>
+            <div class="acciones-servicio">
+                <p class="precio-azul">$500 MXN</p>
+                <a href="detalle.php?id=formateo">
+                    <button class="boton-verum boton-pequeño">Ver Detalles</button>
+                </a>
+            </div>
+        </div>
     </div>
 </main>
 

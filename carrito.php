@@ -78,7 +78,8 @@
                 'limpieza' => ['nombre' => 'Mantenimiento Profundo', 'precio' => 600],
                 'upgrade'  => ['nombre' => 'Upgrade de Velocidad (SSD + RAM)', 'precio' => 400],
                 'cambios'  => ['nombre' => 'Cambio Componente Suelto', 'precio' => 300],
-                'cotizar'  => ['nombre' => 'Asesoría: Cotización & Compatibilidad', 'precio' => 200]
+                'cotizar'  => ['nombre' => 'Asesoría: Cotización & Compatibilidad', 'precio' => 200],
+                'formateo' => ['nombre' => 'Formateo e Instalación de SO', 'precio' => 500]
             ];
             
             $total_orden = 0; 

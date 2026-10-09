@@ -392,3 +392,32 @@ footer a {
 .numero-resumen.cyan { color: #00d2ff; }
 .numero-resumen.verde { color: #25D366; }
 .numero-resumen.rojo { color: #ff4c4c; }
+
+/* --- Tabla de Gestión (Punto 5) --- */
+.tabla-admin {
+    width: 100%;
+    border-collapse: collapse;
+    color: #E0E0E0;
+    text-align: left;
+}
+
+.tabla-admin th {
+    border-bottom: 2px solid #00d2ff;
+    padding: 15px 30px; /* 30px de espacio a los lados para separar las columnas */
+    color: #00d2ff;
+    font-size: 1.1rem;
+    text-align: left; /* Alinea los títulos a la izquierda */
+}
+
+.tabla-admin td {
+    border-bottom: 1px solid #1f2937;
+    padding: 15px 30px; /* Mismo espacio para el contenido */
+    color: #8892b0;
+    vertical-align: middle;
+    text-align: left; /* Alinea los textos a la izquierda */
+}
+
+.tabla-admin tbody tr:hover td {
+    background-color: rgba(0, 210, 255, 0.05); /* Brillo al pasar el mouse */
+    color: white;
+}

@@ -40,7 +40,8 @@
                     'limpieza' => 'Mantenimiento Profundo',
                     'upgrade'  => 'Upgrade de Velocidad (SSD + RAM)',
                     'cambios'  => 'Cambio Componente Suelto',
-                    'cotizar'  => 'Asesoría: Cotización & Compatibilidad'
+                    'cotizar'  => 'Asesoría: Cotización & Compatibilidad',
+                    'formateo' => 'Formateo e Instalación de SO'
                 ];
             ?>
             

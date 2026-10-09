@@ -93,7 +93,19 @@
                 <li>✔ Balance de componentes para evitar cuellos de botella entre CPU y GPU.</li>
                 <li>✔ Entrega de documento detallado con enlaces de compra directos.</li>
             </ul>
-
+            
+        <?php elseif ($id_servicio == 'formateo'): ?>
+            <h1 style="color: #00d2ff; margin-bottom: 10px;">Formateo e Instalación de SO</h1>
+            <p class="precio-azul" style="font-size: 1.5rem;">$500 MXN</p>
+            <br>
+            <p class="texto-descripcion">Reseteo total del sistema. Ideal para eliminar virus, bloqueos y devolverle la velocidad de fábrica a tu equipo.</p>
+            <ul class="texto-descripcion" style="text-align: left; margin-top: 20px; line-height: 2;">
+                <li>✔ Formateo profundo de la unidad de almacenamiento.</li>
+                <li>✔ Instalación limpia de Sistema Operativo (Windows o Linux).</li>
+                <li>✔ Búsqueda e instalación de drivers actualizados (video, red, placa base).</li>
+                <li>✔ Configuración de paquetería esencial de software (Office, navegadores, lector PDF).</li>
+            </ul>
+            
         <?php else: ?>
             <h1 style="color: #ff4c4c; margin-bottom: 10px;">Servicio no encontrado</h1>
             <p class="texto-descripcion">Por favor, regresa al catálogo y selecciona un servicio válido.</p>
