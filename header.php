@@ -33,6 +33,7 @@
             <a href="home.php">VERUM</a>
         </div>
         <nav>
+            <a href="promociones.php" style="color: #940000; font-weight: bold;">Promociones</a>
             <a href="catalogo.php" style="color: #00d2ff; font-weight: bold;"> Catalogo </a>
             <a href="nosotros.php" style="color: #00d2ff; font-weight: bold;"> Nosotros </a>
             <a href="contacto.php" style="color: #00d2ff; font-weight: bold;"> Contactanos </a>

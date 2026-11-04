@@ -130,6 +130,7 @@
             </div>
         </div>
         <div class="tarjeta-servicio">
+            <div class="etiqueta-nuevo">NUEVO</div> 
             <div>
                 <h3>Formateo e Instalación de SO</h3>
                 <p class="texto-descripcion">Instalación limpia del sistema operativo, configuración de drivers actualizados.</p>
