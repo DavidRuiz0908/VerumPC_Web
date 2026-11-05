@@ -33,9 +33,11 @@
             <a href="home.php">VERUM</a>
         </div>
         <nav>
+            <a href="catalogo.php" style="color: #07f7fb; font-weight: bold;"> Catalogo </a>
             <a href="promociones.php" style="color: #940000; font-weight: bold;">Promociones</a>
-            <a href="catalogo.php" style="color: #00d2ff; font-weight: bold;"> Catalogo </a>
+            <a href="campaña.php" style="color: #940000; font-weight: bold;">Destacados</a>
             <a href="nosotros.php" style="color: #00d2ff; font-weight: bold;"> Nosotros </a>
+            <a href="comunidad.php" style="color: #00d2ff; font-weight: bold;"> Comunidad </a>
             <a href="contacto.php" style="color: #00d2ff; font-weight: bold;"> Contactanos </a>
             <a href="carrito.php" style="color: #00d2ff; font-weight: bold;">Mis Ordenes</a>
             <a href="admin.php" style="color: #acb7d2; font-weight: bold;">Admin</a>
