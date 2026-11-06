@@ -40,6 +40,9 @@
             <a href="comunidad.php" style="color: #00d2ff; font-weight: bold;"> Comunidad </a>
             <a href="contacto.php" style="color: #00d2ff; font-weight: bold;"> Contactanos </a>
             <a href="carrito.php" style="color: #00d2ff; font-weight: bold;">Mis Ordenes</a>
+            <a href="publicar_c2c.php" style="color: #059a32; font-weight: bold;">Vender</a>
+            <a href="mis_publicaciones.php" style="color: #059a32; font-weight: bold;">Mis Ventas</a>
+            <a href="subasta.php" style="color: #059a32; font-weight: bold;">Subastar</a>
             <a href="admin.php" style="color: #acb7d2; font-weight: bold;">Admin</a>
             <!-- Condicional de PHP: Si la sesión existe, muestra Perfil. Si no, Iniciar Sesión -->
             <?php if(isset($_SESSION['sesion_activa'])): ?>
